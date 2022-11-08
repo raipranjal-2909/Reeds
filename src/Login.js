@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
 import {Link} from "react-router-dom";
-// import "./style.css";
+import "./signup.css";
 
 export default function SignUp() {
   const [logindata,setlogindata] = useState({
-    email:"",
+    email:"",   
     passWord:"",
   });
   function handleChange(event){
