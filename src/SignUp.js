@@ -10,7 +10,7 @@ export default function SignUp() {
     confirmPassWord: "",
     email: "",
     contact: "",
-    aadaharNom: "",
+    aadharNom: "",
     pan: ""
   });
   function handleChange(event) {
@@ -80,9 +80,9 @@ export default function SignUp() {
               <div className="input-field">
                 <i className="fas fa-lock"></i>
                 <input type="password" 
-                placeholder="Aadhar Nom"
-                name='aadharNom'
-                value={signupData.aadaharNom}
+                placeholder="Adhar Nom"
+                name='adharNom'
+                value={signupData.adharNom}
                 onChange={handleChange} />
               </div>
               <div className="input-field">
