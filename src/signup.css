@@ -102,17 +102,18 @@ form.sign-in-form {
   font-weight: 500;
 }
 
-.social-text {
+/* .social-text {
   padding: 0.7rem 0;
   font-size: 1rem;
-}
+  display:none;
+} */
 
-.social-media {
+/* .social-media {
   display: flex;
   justify-content: center;
-}
+} */
 
-.social-icon {
+/* .social-icon {
   height: 46px;
   width: 46px;
   display: flex;
@@ -125,7 +126,7 @@ form.sign-in-form {
   text-decoration: none;
   font-size: 1.1rem;
   transition: 0.3s;
-}
+} */
 
 .social-icon:hover {
   color: #4481eb;
