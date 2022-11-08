@@ -2,6 +2,7 @@ body {
     margin: 0px;
     font-family: 'segoe ui';
   }
+
 img{
     height: 50px;
 }
@@ -9,7 +10,7 @@ img{
     height: 50px;
     width: 100%;
     /* background-color: #4d4d4d; */
-    position: sticky;
+    position: fixed;
     box-shadow: 0 0 15px #333;
   }
   
@@ -96,4 +97,14 @@ img{
       overflow-y: auto;
     }
   }
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content img{
+  height: 400px;
+}
+
 
