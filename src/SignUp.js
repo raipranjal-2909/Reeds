@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./signup.css";
+import { useNavigate } from 'react-router-dom';
 export default function SignUp() {
+  const navigate = useNavigate();
   const [signupData, setSignupdata] = useState({
     username: "",
     passWord: "",
@@ -25,6 +27,7 @@ export default function SignUp() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(signupData);
+    navigate("/");
 
   }
   return (

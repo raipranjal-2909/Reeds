@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./signup.css";
+import { useNavigate } from 'react-router-dom';
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from 'react-icons/fa'; 
@@ -9,6 +10,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 // import {Logo} from "./log.svg";
 export default function SignUp() {
+  const navigate = useNavigate();
   const [logindata, setlogindata] = useState({
     email: "",
     passWord: "",
@@ -27,6 +29,7 @@ export default function SignUp() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(logindata);
+    navigate("/ ");
 
   }
   return (
