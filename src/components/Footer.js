@@ -1,14 +1,17 @@
 import React from 'react'
-import { FaInstagram,FaFacebook, FaDiscord } from "react-icons/fa";
+import { FaInstagram,FaFacebook, FaDiscord, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="footer">
-        <p className='copyright'>&#169; Prateek and Company 2022</p>
-        
-        <FaFacebook />
-        <FaInstagram />
-        <FaDiscord />
+    <div className="sec-footer">
+      <div className="footer">
+        <div className="social-icons">
+          <FaGithub className='icon'/>
+          <FaGithub className='icon' />
+          <FaGithub className='icon'/>
+          <p className='copyright'>&#169; Reeds</p>
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap');
+
+:root{
+  --primary-font: 'Nunito Sans', sans-serif;
+  --second-font: 'Comfortaa', cursive;
+  
+}
+*:hover{
+  transition: 0.2s;
+}
+html{
+  font-size: 62.5%;
+}
 body {
     margin: 0px;
-    font-family: 'segoe ui';
+    font-family: var(--primary-font);
+    font-weight: 200;
   }
 
-img{
-    height: 50px;
-}
+  /* ===== css for nav bar ==== */
+  img{
+      height: 50px;
+  }
   .nav {
     height: 50px;
     width: 100%;
-    /* background-color: #1aac83; */
+    background-color: #5995fd;
     position: fixed;
-    box-shadow: 0 0 15px #333;
+    box-shadow: 0 0 5px #333;
   }
   
   .nav > .nav-header {
@@ -19,10 +34,11 @@ img{
   }
   
   .nav > .nav-header > .nav-title {
+    font-family:var(--second-font);
     display: inline-block;
     font-size: 22px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     position: absolute;
     color: black;
   }
@@ -97,14 +113,80 @@ img{
       overflow-y: auto;
     }
   }
-
+/* ======= css for main page ===== */
 .content{
+  order:1;
   display: flex;
+  position: absolute;
+  top :18rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+.content-info{
+  position: relative;
+  top :10rem;
+  left: 7rem;
+  text-align: left;
+}
+.Main-heading{  
+  font-family: var(--second-font);
+  font-weight:bold;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.heading-para{
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 .content img{
-  height: 400px;
+  order:2;
+  position:relative;
+  left:20rem;
+  height: 40rem;
+}
+button{
+  width: 150px;
+  background-color: #5995fd;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: var(--primary-font);
 }
 
-
+/* ===== css for footer ====== */
+.sec-footer{
+  position: absolute;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:15%;
+  background-color: #5995fd;
+}
+.footer{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright{
+  font-size:2rem;
+}
+.social-icons{
+  display:flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 2rem;
+  font-size:2.6rem;
+}
+.icon:hover{
+  color: white;
+  /* transition: all 0.3s; */
+}
